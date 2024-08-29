@@ -4,41 +4,39 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    slidesPerView: 5, // Muestra 5 imágenes a la vez
-    spaceBetween: 10, // Espacio entre imágenes
-    loop: true, // Habilita el loop infinito
-    navigation: {
-        nextEl: '.swiper-button-next', // Flecha siguiente
-        prevEl: '.swiper-button-prev', // Flecha anterior
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+document.addEventListener("DOMContentLoaded", function() {
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        slidesPerView: 5,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 25,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 30,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
         }
-    }
-});
+    });
 
-
-function mostrarCarrusel() {
-    const carrusel = document.querySelector('.swiper-container');
-
-
-    carrusel.classList.toggle('swiper-container-hidden');
-    carrusel.classList.toggle('swiper-container-visible');
-
-
-    if (carrusel.classList.contains('swiper-container-visible')) {
-        swiper.update();
-    }
-}
+    function mostrarCarrusel() {
+        const carrusel = document.querySelector('.swiper-container');
+        carrusel.classList.toggle('swiper-container-visible');
+        if (carrusel.classList.contains('swiper-container-visible')) {
+            swiper.update();}
+        }
+        document.querySelectorAll('.categories button').forEach(button => {
+            button.addEventListener('click', mostrarCarrusel);
+        });
+    });
