@@ -127,6 +127,8 @@ html, body {
     right: 0;
     z-index: 10;
     display: none;; 
+    overflow: hidden;
+    
 }
 
 .swiper-container-visible {
@@ -147,7 +149,10 @@ html, body {
 }
 
 .swiper-slide {
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }   
 
 .swiper-slide img {
