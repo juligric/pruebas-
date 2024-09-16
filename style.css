@@ -45,7 +45,7 @@ html, body {
     background-image: url(rosa.jfif);
     width: 100%;
     height: 600px;
-    z-index: 1; 
+    z-index: 500; 
     position: relative;
     overflow: hidden; /* Asegura que el carrusel no se salga del contenedor */
 }
@@ -120,6 +120,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 100px;
     /* Elimina el margen en CSS, ya que lo controlaremos con `spaceBetween` */
 }
 
@@ -152,5 +154,28 @@ html, body {
 /* Clase para mostrar el carrusel */
 .swiper-container-visible {
     display: block;
+    position: absolute; /* Asegura que no empuje el contenido hacia abajo */
+    top: 0; /* Asegura que cubra desde la parte superior */
+    left:0;
+    width: 100%;
+    height: 300px;
+    z-index: 1000; /* Asegura que el carrusel esté por encima */
+}
+
 }
         
+.swiper-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho según lo que quieras cubrir */
+    height: 150px; /* Cambia esta altura para cubrir solo la parte donde dice "Planify" */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    z-index: -1; /* Asegúrate de que el fondo esté detrás de las imágenes */
+}
+.swiper-container {
+    position: relative;
+    height: 110px; /* Ajusta la altura del Swiper */
+    width: 100%; /* Ajusta el ancho si es necesario */
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
