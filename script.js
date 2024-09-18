@@ -30,7 +30,7 @@ function toggleCarrusel() {
         carrusel.classList.remove('swiper-container-hidden');
         carrusel.classList.toggle('swiper-container-visible');
     }
-   
+
     if (carrusel.classList.contains('swiper-container-visible')) {
         swiper.update(); // Actualiza Swiper para asegurar un funcionamiento correcto
     }

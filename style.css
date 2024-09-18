@@ -48,6 +48,7 @@ html, body {
     z-index: 500; 
     position: relative;
     overflow: hidden; /* Asegura que el carrusel no se salga del contenedor */
+    z-index: 500;
 }
 .categories {
     display: flex;
@@ -148,7 +149,7 @@ html, body {
     height: 300px;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    transform: translateY(-50%);
+
 }
 
 /* Clase para mostrar el carrusel */
@@ -171,7 +172,7 @@ html, body {
     width: 100%; /* Ajusta el ancho según lo que quieras cubrir */
     height: 150px; /* Cambia esta altura para cubrir solo la parte donde dice "Planify" */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
-    z-index: -1; /* Asegúrate de que el fondo esté detrás de las imágenes */
+    z-index: 999; /* Asegúrate de que el fondo esté detrás de las imágenes */
 }
 .swiper-container {
     position: relative;
