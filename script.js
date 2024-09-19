@@ -36,3 +36,9 @@ function toggleCarrusel() {
     }
 }
 
+document.querySelectorAll('.swiper-slide img').forEach(img => {
+    img.addEventListener('click', function() {
+      const imageId = this.getAttribute('data-id');  // Obtener el ID de la imagen clickeada
+      window.location.href = `detalles.html?imageId=${imageId}`;  // Redirigir con el ID como parámetro
+    });
+}); 

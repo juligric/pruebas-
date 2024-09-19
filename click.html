@@ -1,57 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    git clone 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cambio Dinámico de Imágenes e Información</title>
     <link href="click.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <!-- Esta será la imagen principal que cambia dependiendo de la imagen clickeada -->
     <div class="imagen">
-        <img src="descarga (1).jfif" alt="logo">
+        <img id="imagen-principal" src="descarga (1).jfif" alt="Imagen Principal" width="100%">
     </div>
 
-    <div class="buttons">
-        <button type="button" onclick="alert('¡Botón clicado!')">Espacio cerrado</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">Espacios abiertos</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">Solo nosotros dos</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">4-6 personas</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">6-8 personas</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">8+ personas</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">Chill</button>
-        <button type="button" onclick="alert('¡Botón clicado!')">Movido</button>
+    <!-- Información que también cambia dependiendo de la imagen clickeada -->
+    <div id="info-principal">
+        <h2 id="titulo">Título por defecto</h2>
+        <p id="descripcion">Descripción por defecto</p>
     </div>
+
+    <!-- Tabla de imágenes en las que puedes hacer clic -->
     <div class="table-container">
         <table>
             <tr>
                 <td style="padding-right: 20px;">
-                    <a href="yaclick1.html"><img src="descarga (1).jfif" alt="Imagen 1" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 1" data-id="1" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
                 <td style="padding-left: 20px; padding-right: 20px;">
-                    <a href="yaclick2.html"><img src="descarga (1).jfif" alt="Imagen 2" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 2" data-id="2" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
                 <td style="padding-left: 20px;">
-                    <a href="yaclick3.html"><img src="descarga (1).jfif" alt="Imagen 3" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 3" data-id="3" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
             </tr>
             <tr>
                 <td style="padding-right: 20px;">
-                    <a href="pagina4.html"><img src="descarga (1).jfif" alt="Imagen 4" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 4" data-id="4" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
                 <td style="padding-left: 20px; padding-right: 20px;">
-                    <a href="pagina5.html"><img src="descarga (1).jfif" alt="Imagen 5" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 5" data-id="5" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
                 <td style="padding-left: 20px;">
-                    <a href="pagina6.html"><img src="descarga (1).jfif" alt="Imagen 6" style="margin: 10px;" width="100%"></a>
+                    <img src="descarga (1).jfif" alt="Imagen 6" data-id="6" class="imagen-click" style="margin: 10px;" width="100%">
                 </td>
             </tr>
         </table>
     </div>
-        
-</body>
-</html>
