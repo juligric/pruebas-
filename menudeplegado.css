@@ -1,0 +1,63 @@
+/* Estilos básicos del header */
+header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    position: relative; /* Necesario para que funcione el dropdown */
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos del dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    padding: 0;
+  }
+  
+  .dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #555;
+  }
+  
+  /* Mostrar el dropdown al pasar el ratón */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
