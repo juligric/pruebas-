@@ -7,24 +7,27 @@
     <title>Cambio Dinámico de Imágenes e Información</title>
     <link href="menudeplegado.css" rel="stylesheet" type="text/css" />
 </head>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menú Desplegable</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav>
       <ul class="menu">
         <li><a href="#">Inicio</a></li>
+        <!-- Menú desplegable solo al pasar sobre "Servicios" -->
         <li class="dropdown">
           <a href="#" class="dropbtn">Servicios</a>
           <ul class="dropdown-content">
-            <li><a href="#">Servicio 1</a></li>
-            <li><a href="#">Servicio 2</a></li>
-            <li><a href="#">Servicio 3</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Desarrollo</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">SEO</a></li>
           </ul>
         </li>
         <li><a href="#">Contacto</a></li>
