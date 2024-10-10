@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 200vh; /* Aumenta el tamaño de la página para permitir el scroll */
+    overflow: auto; /* Permitir scroll */
+}
+
+.fondoburbujas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Fondo detrás de todo */
+}
+
+.fondoburbujas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.planify {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    z-index: 1; /* Mantiene la imagen de Planify por encima */
+    transition: transform 0.5s ease; /* Añade una transición suave */
+}
+
+.planify img {
+    max-width: 70%; /* Asegura que la imagen no se salga */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+.burbuja {
+    position: absolute;
+    width: 250px; /* Tamaño de las burbujas */
+    height: auto;
+    transition: transform 0.5s ease; /* Añade una transición suave */
+}
+
+.burbuja1 {
+    top: 100px;
+    left: 20px;
+}
+
+.burbuja2 {
+    top: 200px;
+    left: 60%;
+}
+
+.burbuja3 {
+    top: 300px;
+    right: 20px;
+}
+
+.hidden {
+    transform: translateY(-100%); /* Mueve las burbujas y logo fuera de la vista */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el menú */
+    z-index: 2; /* Mantiene el menú por encima */
+}
+
+.navegacion {
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}

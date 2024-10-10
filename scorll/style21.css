@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.fondoburbujas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Mantiene el fondo detrás */
+}
+
+.fondoburbujas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.planify, .burbuja1, .burbuja2, .burbujas3, .burbujas4 {
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Transiciones suaves */
+  opacity: 1; /* Totalmente visible */
+}
+
+.hidden {
+  transform: translateY(-100%); /* Mueve el elemento hacia arriba fuera de la pantalla */
+  opacity: 0; /* Hace el elemento invisible */
+}
+
+.planify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planify img {
+  max-width: 70%;
+  height: auto;
+}
+
+.burbuja1 {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 250px;
+  height: auto;
+}
+
+.burbuja2 {
+  position: absolute;
+  top: 300px;
+  right: 40%;
+  width: 250px;
+  height: auto;
+}
+
+.burbujas3 {
+  position: absolute;
+  top: 500px;
+  width: 250px;
+  height: auto;
+}
+
+.burbujas4 {
+  position: absolute;
+  top: 700px;
+  right: 10%;
+  width: 400px;
+  height: auto;
+}
+
+
+
+.navegacion {
+  width:  1200px;
+  margin: 30px auto;
+  background:white;
+  z-index: 100;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.navegacion ul{
+  list-style: none;
+
+}
+.menu > li{
+position: relative ;
+display: inline-block;
+margin: 0 15px;
+}
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+
+}
+.menu li a:hover {
+  color: grey;
+  transition: all .3s;/* para que tarde mas en pintarse*/
+
+
+}
+/*submenu1*/
+.submenu1 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu1 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu1 {
+  display: block;
+
+}
+
+.submenu2 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu2 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu2 {
+  display: block;
+
+}
+
+.submenu3 {
+  position: absolute;
+  background:white;
+  width: 130%;
+  display: none;
+}
+.submenu3 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu3 {
+  display: block;
+
+}
+
+
+.submenu4 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu4 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  
+  text-decoration: none;
+}
+.menu li:hover .submenu4 {
+  display: block;
+
+}
+
+.submenu5 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu5 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu5 {
+  display: block;
+}
+
+.submenu6 {
+  position: absolute;
+  background: white;
+  width: 130%;
+  display: none;
+}
+.submenu6 li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+.menu li:hover .submenu6 {
+  display: block;
+}
