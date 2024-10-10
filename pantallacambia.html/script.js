@@ -1,7 +1,7 @@
 const informacion = {
     "1": [
-        { texto: "Texto para opción 1, cuadro 1", imagen: "ruta_imagen1_opcion1.jpg" },
-        { texto: "Texto para opción 1, cuadro 2", imagen: "ruta_imagen2_opcion1.jpg" },
+        { texto: "Parque Tres de febrero, cuadro 1", imagen: "image(1).png" },
+        { texto: "Jardin japones, cuadro 2", imagen: "ruta_imagen2_opcion1.jpg" },
         { texto: "Texto para opción 1, cuadro 3", imagen: "ruta_imagen3_opcion1.jpg" },
         { texto: "Texto para opción 1, cuadro 4", imagen: "ruta_imagen4_opcion1.jpg" },
         { texto: "Texto para opción 1, cuadro 5", imagen: "ruta_imagen5_opcion1.jpg" },
