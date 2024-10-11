@@ -31,6 +31,41 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
+    "4": [
+        { texto: "Paintball Revolution", imagen: "image (16).png" },
+        { texto: "Xtreme Paintball", imagen: "image (17).png" },
+        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
+        { texto: "Urban Paintball", imagen: "image (19).png" },
+        { texto: "Warzone Paintball", imagen: "image (20).png" },
+        { texto: "Action live Paintball", imagen: "image (21).png" }
+    ],
+    "5": [
+        { texto: "Paintball Revolution", imagen: "image (16).png" },
+        { texto: "Xtreme Paintball", imagen: "image (17).png" },
+        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
+        { texto: "Urban Paintball", imagen: "image (19).png" },
+        { texto: "Warzone Paintball", imagen: "image (20).png" },
+        { texto: "Action live Paintball", imagen: "image (21).png" }
+    ],
+
+    "6": [
+        { texto: "Paintball Revolution", imagen: "image (16).png" },
+        { texto: "Xtreme Paintball", imagen: "image (17).png" },
+        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
+        { texto: "Urban Paintball", imagen: "image (19).png" },
+        { texto: "Warzone Paintball", imagen: "image (20).png" },
+        { texto: "Action live Paintball", imagen: "image (21).png" }
+    ],
+    "7": [
+        { texto: "Paintball Revolution", imagen: "image (16).png" },
+        { texto: "Xtreme Paintball", imagen: "image (17).png" },
+        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
+        { texto: "Urban Paintball", imagen: "image (19).png" },
+        { texto: "Warzone Paintball", imagen: "image (20).png" },
+        { texto: "Action live Paintball", imagen: "image (21).png" }
+    ],
+
+
     // Agrega más opciones según sea necesario
 };
 
