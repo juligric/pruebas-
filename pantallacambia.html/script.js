@@ -1,21 +1,36 @@
 const informacion = {
     "1": [
-        { texto: "Parque Tres de febrero, cuadro 1", imagen: "image(1).png" },
-        { texto: "Jardin japones, cuadro 2", imagen: "ruta_imagen2_opcion1.jpg" },
-        { texto: "Texto para opción 1, cuadro 3", imagen: "ruta_imagen3_opcion1.jpg" },
-        { texto: "Texto para opción 1, cuadro 4", imagen: "ruta_imagen4_opcion1.jpg" },
-        { texto: "Texto para opción 1, cuadro 5", imagen: "ruta_imagen5_opcion1.jpg" },
-        { texto: "Texto para opción 1, cuadro 6", imagen: "ruta_imagen6_opcion1.jpg" }
+        { texto: "Parque Tres de febrero", imagen: "image (5).png" },
+        { texto: "Jardin japones", imagen: "image.png" },
+        { texto: "Ecoparque", imagen: "image (6).png" },
+        { texto: "Parque saavedra", imagen: "image (2).png" },
+        { texto: "Barrancas de belgrno", imagen: "image (4).png" },
+        { texto: "Jardin Botanico", imagen: "image (7).png" }
     ],
     "2": [
-        { texto: "Texto para opción 2, cuadro 1", imagen: "ruta_imagen1_opcion2.jpg" },
-        { texto: "Texto para opción 2, cuadro 2", imagen: "ruta_imagen2_opcion2.jpg" },
-        { texto: "Texto para opción 2, cuadro 3", imagen: "ruta_imagen3_opcion2.jpg" },
-        { texto: "Texto para opción 2, cuadro 4", imagen: "ruta_imagen4_opcion2.jpg" },
-        { texto: "Texto para opción 2, cuadro 5", imagen: "ruta_imagen5_opcion2.jpg" },
-        { texto: "Texto para opción 2, cuadro 6", imagen: "ruta_imagen6_opcion2.jpg" }
+        { texto: "Alto Parque", imagen: "image (8).png" },
+        { texto: "Jardin japones", imagen: "image.png" },
+        { texto: "Ecoparque", imagen: "image (6).png" },
+        { texto: "Estacion Vertical", imagen: "image (9).png" },
+        { texto: "Barrancas de Belgrano", imagen: "image (4).png" },
+        { texto: "Jardin Botanico", imagen: "image (7).png" }
     ],
-    
+    "3": [
+        { texto: "Palermo Soho y Hollywood", imagen: "image (10).png" },
+        { texto: "Malba", imagen: "image (11).png" },
+        { texto: "Barrio chino", imagen: "image (15).png" },
+        { texto: "Costanera Norte", imagen: "image (12).png" },
+        { texto: "Museo Malvinas", imagen: "image (13).png" },
+        { texto: "Museo Larreta", imagen: "image (14).png" }
+    ],
+    "4": [
+        { texto: "Paintball Revolution", imagen: "image (16).png" },
+        { texto: "Xtreme Paintball", imagen: "image (17).png" },
+        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
+        { texto: "Urban Paintball", imagen: "image (19).png" },
+        { texto: "Warzone Paintball", imagen: "image (20).png" },
+        { texto: "Action live Paintball", imagen: "image (21).png" }
+    ],
     // Agrega más opciones según sea necesario
 };
 
@@ -50,4 +65,4 @@ const opcionSeleccionada = obtenerParametro('opcion');
 if (opcionSeleccionada) {
     actualizarContenido(opcionSeleccionada);
 }
-</script>
+
