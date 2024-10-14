@@ -31,14 +31,6 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
-    "4": [
-        { texto: "Paintball Revolution", imagen: "image (16).png" },
-        { texto: "Xtreme Paintball", imagen: "image (17).png" },
-        { texto: "Paintball Zona Norte", imagen: "image (18).png" },
-        { texto: "Urban Paintball", imagen: "image (19).png" },
-        { texto: "Warzone Paintball", imagen: "image (20).png" },
-        { texto: "Action live Paintball", imagen: "image (21).png" }
-    ],
     "5": [
         { texto: "Paintball Revolution", imagen: "image (16).png" },
         { texto: "Xtreme Paintball", imagen: "image (17).png" },
@@ -47,7 +39,6 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
-
     "6": [
         { texto: "Paintball Revolution", imagen: "image (16).png" },
         { texto: "Xtreme Paintball", imagen: "image (17).png" },
@@ -56,6 +47,7 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
+
     "7": [
         { texto: "Paintball Revolution", imagen: "image (16).png" },
         { texto: "Xtreme Paintball", imagen: "image (17).png" },
@@ -64,6 +56,23 @@ const informacion = {
         { texto: "Warzone Paintball", imagen: "image (20).png" },
         { texto: "Action live Paintball", imagen: "image (21).png" }
     ],
+    "8": [
+        { texto: "Patio de los lecheros", imagen: "meriendas 1.png" },
+        { texto: "lagos de Regatas", imagen: "meriendas 2.png" },
+        { texto: "El Rosedal Café", imagen: "meriendas 3.png" },
+        { texto: "Club de Pescadores", imagen: "meriendas 4.png" },
+        { texto: "Casa Cavia", imagen: "meriendas 5.png" },
+        { texto: "Action live Paintball", imagen: "meriendas 6.png" }
+    ],
+    "9": [
+        { texto: "Shopping Dot Baires", imagen: "dot.png" },
+        { texto: "Distrito Arcos ", imagen: "arcos.png" },
+        { texto: "Alto Palermo Shopping", imagen: "palermo.png" },
+        { texto: "Patio Bullrich", imagen: "patio.png" },
+        { texto: "Alcorta Shopping", imagen: "alcorta.png" },
+        { texto: "Galerias del Pacifico", imagen: "galeria.png" }
+    ],
+    {
 
 
     // Agrega más opciones según sea necesario
