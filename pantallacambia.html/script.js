@@ -72,7 +72,14 @@ const informacion = {
         { texto: "Alcorta Shopping", imagen: "alcorta.png" },
         { texto: "Galerias del Pacifico", imagen: "galeria.png" }
     ],
-    {
+    "10": [
+        { texto: " Paloko Bowling", imagen: "bowling6.png" },
+        { texto: "Bowling snack", imagen: "bowling1.png" },
+        { texto: "Brasov bowling - Pilar", imagen: "bowling2.png" },
+        { texto: "Bowling Palermo", imagen: "bowling3.png" },
+        { texto: "bowling Paloko - DOT", imagen: "bowling4.png" },
+        { texto: "Galerias del Pacifico", imagen: "bowling5.png" }
+    ],
 
 
     // Agrega más opciones según sea necesario
