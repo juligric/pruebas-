@@ -117,3 +117,10 @@ if (opcionSeleccionada) {
     actualizarContenido(opcionSeleccionada);
 }
 
+
+
+function toggleMenu() {
+    var sideMenu = document.getElementById("sideMenu");
+    sideMenu.classList.toggle("open");
+}
+    

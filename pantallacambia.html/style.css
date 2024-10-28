@@ -317,3 +317,50 @@ margin: 0 15px;
   justify-content: center;
   align-items: center */
 ;}
+
+
+.menu-icon {
+  width: 30px; /* Ajusta el tamaño de la imagen */
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 20;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1001;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: #f1f1f1;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#sideMenu.open {
+  width: 250px;
+}
