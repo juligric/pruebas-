@@ -1,0 +1,79 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0; /* Elimina el padding */
+}
+
+/* Estilo del contenedor del Swiper */
+.swiper-container {
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Alto completo de la ventana */
+  position: relative; /* Necesario para las flechas */
+}
+
+/* Estilo para cada slide del Swiper */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Asegúrate de que ocupe toda la altura */
+}
+
+/* Estilo de las preguntas */
+.preguntaf {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para las opciones de respuesta */
+.opicones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.opicones label {
+  margin: 5px 0;
+}
+
+/* Estilo para el botón */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo del resultado */
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* Cambia el color de las flechas */
+    z-index: 10; /* Asegúrate de que estén por encima de otros elementos */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px; /* Tamaño de las flechas */
+}
