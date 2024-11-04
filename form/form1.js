@@ -1,5 +1,31 @@
 
 
+let currentSlide = 0;
+showSlide(currentSlide);
+
+function showSlide(n) {
+  const slides = document.querySelectorAll(".form-slide");
+  slides.forEach((slide, index) => {
+    slide.classList.remove("active");
+    if (index === n) {
+      slide.classList.add("active");
+    }
+  });
+
+  document.getElementById("prevBtn").style.display = n === 0 ? "none" : "inline";
+  document.getElementById("nextBtn").textContent = n === slides.length - 1 ? "Finalizar" : "Siguiente";
+}
+
+function nextPrev(n) {
+  const slides = document.querySelectorAll(".form-slide");
+  if (n === 1 && currentSlide >= slides.length - 1) {
+    calcularPlan();
+    return;
+  }
+  currentSlide += n;
+  showSlide(currentSlide);
+}
+
 function calcularPlan() {
   // Obtener las respuestas seleccionadas
   const q1 = document.querySelector('input[name="q1"]:checked');
